@@ -43,7 +43,7 @@ import cv2
 
 videoCaptureObject = cv2.VideoCapture(0)
 ret,frame = videoCaptureObject.read()
-cv2.imwrite("image.jpg",frame)
+cv2.imwrite("photo1.jpg",frame)
 
 
 ```
@@ -58,7 +58,7 @@ cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
 
-    cv2.imshow("image1",frame)
+    cv2.imshow("photo1",frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 videoCaptureObject.release()
@@ -88,7 +88,7 @@ while True:
     image[height//2:, width//2:] = smaller_frame
 
     image[:height//2, :width//2] = cv2.rotate(smaller_frame,cv2.cv2.ROTATE_180)
-    cv2.imshow("image.jpg",image)
+    cv2.imshow("photo1.jpg",image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 videoCaptureObject.release()
@@ -126,25 +126,25 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
-![O1](https://user-images.githubusercontent.com/81132849/162367993-0d39d342-3913-4c62-90d1-49b0bfffb2f4.png)
+![P1](https://user-images.githubusercontent.com/81132849/162459297-807091a3-89ad-4018-92d7-1e4eec9c1ff5.png)
+
 
 
 
 ### ii) Display the video
-![O2](https://user-images.githubusercontent.com/81132849/162368028-2cc9a033-1bcf-4f0d-ab08-ed68c9262199.png)
+![P2](https://user-images.githubusercontent.com/81132849/162459379-69a6bcb7-485e-44be-98b5-713582563b27.png)
 
 
 
 
 
 ### iii) Display the video by resizing the window
-![O3](https://user-images.githubusercontent.com/81132849/162368096-dd14572b-7f63-41d9-8d5d-3829236eb7b6.png)
-
+![P3](https://user-images.githubusercontent.com/81132849/162459451-a9a19b40-e954-4a58-9b16-19132f69c3e4.png)
 
 
 
 ### iv) Rotate and display the video
-![O4](https://user-images.githubusercontent.com/81132849/162368463-feacf926-f404-4c21-bb42-d5b46d7845e3.png)
+![P4](https://user-images.githubusercontent.com/81132849/162459505-09588b19-9375-4060-987a-373363701f7a.png)
 
 
 
