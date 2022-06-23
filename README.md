@@ -1,4 +1,9 @@
-# Image-Acquisition-from-Web-Camera
+## EX.NO :  02
+
+## DATE: 
+
+# <p align="center"> Image-Acquisition-from-Web-Camera </p> 
+
 ## Aim
  
 Aim:
